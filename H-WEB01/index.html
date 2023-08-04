@@ -1,16 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola Mundo</title>
+    <title>Document</title>
+    <style>
+        header,nav,article,aside,footer{
+            border:solid 1px #5F9EA0; 
+            border-radius:15px; 
+            text-align: center;
+        }
+        main{
+            display: flex; 
+            margin: 8px 0px;
+        }
+
+        nav,aside{
+            width: 20%;
+        }
+
+        article{
+            width: 60%;
+            margin: 0px 8px;
+        }
+    </style>
 </head>
 <body>
-    <h1>hola Mundo</h1>
-   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore voluptate nesciunt illum delectus omnis nihil soluta fuga? Quos soluta aspernatur dignissimos obcaecati corporis fugiat neque recusandae molestias, tempora enim. Consequuntur.</p> 
-    <img src="https://picsum.photos/id/1058/600/400" alt="">
-    <img src="https://picsum.photos/id/945/600/400" alt="">
-    <meta property="og:image" content="https://picsum.photos/id/684/1200/630" />
+    <header style="background-color: #E8F2A1; ">
+        <h1 style="margin-bottom: 0px;">Título del encabezado</h1>
+        <p style="margin-top: 0px;">Texto del encabezado</p>
+    </header>
+<!-- ?padre en comun -->
+    <main>
+        <nav style="background-color: #F7D1D5;">
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ul>
+        </nav>
+        <article style="background-color: #FFF5CE;">
+            <h1>Títitulo del artículo 1 </h1>
+            <p>Texto del articulo 1</p>
+            <h1>Títitulo del artículo 2</h1>
+            <p>Texto del articulo 2</p>
+        </article>
+        <aside style="background-color: #DEDCE6;">
+            <h1>Títitulo del Aside 2</h1>
+            <p>Contenido del Aside</p>
+        </aside>
+    </main>
+<!-- ? termina padre -->
+    <footer style="background-color: #B4C7DC; ">
+        <p>Texto de pie de página</p>
+    </footer>
 </body>
 </html>
